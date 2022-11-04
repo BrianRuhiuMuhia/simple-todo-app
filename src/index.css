@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.wrapper{
+  margin-inline:auto;
+  width:95vw;
+  max-width: 900px;
+}
+.header,.footer{
+  background:linear-gradient(to right,lime,rgba(231, 15, 231, 0.37),aqua,rgba(255, 11, 255, 0.336));
+  display: flex;
+  color:white;
+}
+.main{
+  min-height:calc(100vh - (8rem))
+}
+.header,.footer{
+  height:4rem;
+  text-align: center;
+}
+.main__content{
+  display:flex;
+  flex-direction: column;
+}
+.add-input,.search-input{
+  width:400px;
+  height: 30px;
+}
+.search-input{
+  width:450px;
+}
+.inputs{
+  margin-block: 1em;
+display:flex;
+padding:0.5em;
+flex-direction: column;
+align-items: center;
+width: 100%;
+gap:0.5em;
+
+}
+.btn{
+  background-color: lime;
+  border:none;
+  cursor: pointer;
+}
+.add-btn{
+width:50px;
+height: 35px;
+width:50px;
+color:white;
+margin-left:5px;
+}
+.btn:hover{
+  background-color: red;
+}
+.header__content{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,p{
+  margin:0;
+}
+ul{
+  list-style: none;;
+  padding: 0;
+}
+.list{
+  display:flex;
+  flex-direction:column;
+  gap:1em;
+}
+.item{
+  padding-block:1em;
+  padding-inline:3em;
+  display:flex;
+  background:linear-gradient(to right,rgba(255, 192, 203, 0.452),rgba(231, 15, 231, 0.37),aqua,rgba(255, 11, 255, 0.336));
+  justify-content: space-between;
+  align-items: center;
+}
+.del-btn{
+  width:100px;
+  height:40px;
+  color:white;
+}
+.item span{
+  font-size: 1.3em;;
+}
+.item input[type='checkbox']{
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
